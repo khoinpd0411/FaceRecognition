@@ -1,0 +1,7 @@
+# Model
+MODEL_NAME: 'iresnet50'
+PRETRAINED_PATH: './weights/MSMV1_Resnet50.pth'
+ALIGN_OUTPUT:
+  - 112
+  - 112
+EMBEDDING_BATCHSIZE: 8

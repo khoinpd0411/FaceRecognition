@@ -1,0 +1,26 @@
+# Mode
+FLASK_ENV: 'development'
+DEBUG: True
+TESTING: False
+
+# Config Host
+FLASK_RUN_HOST: '0.0.0.0'
+FLASK_RUN_PORT: 8000
+URL_PREFIX: '/api/v1'
+
+# Model
+FACE_DETECTOR: 'RetinaFaceDetector'
+MIN_FACE_AREA: 0.1
+
+FEATURE_EXTRACTOR: 'ArcFaceExtractor'
+FACE_SEARCH: 'FaissEngine'
+COSINE_THRES: 0.5
+
+# Database
+SQLALCHEMY_COMMIT_ON_TEARDOWN: True
+SQLALCHEMY_DATABASE_URI: "sqlite:///~/Code/Projects/FaceRecognition/FaceAPI/databases/data-dev.sqlite"
+
+# Device
+FACE_DETECTOR_DEVICE: 'cpu'
+FEATURE_EXTRACTOR_DEVICE: 'cpu'
+FACE_SEARCH_DEVICE: 'cpu'

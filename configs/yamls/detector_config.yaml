@@ -1,0 +1,18 @@
+# Model
+MODEL_NAME: 'mnet'
+PRETRAINED_PATH: './weights/mobilenet0.25_Final.pth'
+
+INPUT_SIZE:
+  - 640
+  - 640
+
+ALIGNED_SIZE:
+  - 112
+  - 112
+
+CONF_THRESHOLD: 0.8
+NMS_THRESHOLD: 0.5
+# VIS_THRESHOLD: 0.8
+TOP_K: 750
+KEEP_TOP_K: 750
+MAX_BY_AREA: True

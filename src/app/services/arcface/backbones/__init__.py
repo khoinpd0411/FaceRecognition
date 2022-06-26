@@ -1,0 +1,1 @@
+from .iresnet import iresnet100, iresnet50
